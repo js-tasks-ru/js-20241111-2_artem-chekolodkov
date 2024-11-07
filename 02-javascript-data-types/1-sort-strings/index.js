@@ -7,10 +7,10 @@
 
 export function sortStrings(arr, param = 'asc') {
 
- let par_num = {asc: 1, desc: -1};
- par_num = par_num[param];
+ const par_num = {asc: 1, desc: -1};
+ let parr = par_num[param];
 
- let local = [['ru', 'en'], {caseFirst: 'upper'}]
+ const local = [['ru', 'en'], {caseFirst: 'upper'}]
 
- return [...arr].sort((a, b) => a.localeCompare(b, ...local) * par_num)
+ return [...arr].sort((a, b) => a.localeCompare(b, ...local) * parr)
 }
