@@ -15,21 +15,11 @@ export function createGetter(path) {
       t_ob = t_ob[spl_El];
     });
     
-    if (typeof t_ob === 'function') return undefined
+    if (typeof t_ob === 'function') return 
     else return (t_ob);
   }
 
 }
 
-//test
-/*const product = {
-    category: {
-        title: 'Goods'
-    }
-}
-
-const getter = createGetter('category.title')
-
-console.log(getter(product))*/
 
 
