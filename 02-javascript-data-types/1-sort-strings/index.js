@@ -8,7 +8,7 @@
 export function sortStrings(arr, param = 'asc') {
 
  const par_num = {asc: 1, desc: -1};
- let parr = par_num[param];
+ const parr = par_num[param];
 
  const local = [['ru', 'en'], {caseFirst: 'upper'}]
 

@@ -4,6 +4,7 @@
  * @returns {*[]} - the new array with uniq values
  */
 export function uniq(arr) {
+    const res_arr = new Set(arr);
     if (arr == undefined) return arr = []
-    else return arr.filter((el, id) => id == arr.indexOf(el))
+    else return [...res_arr];
 }
